@@ -176,3 +176,14 @@
 
   text-align: right;
 }
+
+.iframe-vid{
+  width: 250px; 
+  height: 250px; 
+  border: 2px solid #1b292f;
+  padding: 10px;  
+}
+
+.w-multimedia{
+  width: 25%;	
+}
