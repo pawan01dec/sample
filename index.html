@@ -6,7 +6,17 @@
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
    <link rel="stylesheet" href="/sample/css/style.css">
-   
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+   <script>
+    $(function(){
+      $("#inc-side-nav").load("/sample/includes/side-nav.html"); 
+	  $("#inc-top-nav").load("/sample/includes/top-nav.html");
+	  $("#inc-footer").load("/sample/includes/footer.html");
+	  
+    });
+  </script>	  
 </head>
 
 <body>
@@ -268,17 +278,7 @@
    <!-- jQuery -->
 
 </body>
-
-<script src="/sample/js/jquery.min.js"></script>
-<script src="/sample/js/bootstrap.min.js"></script>
-   <script>
-   $(function(){
-      $("#inc-side-nav").load("/sample/includes/side-nav.html"); 
-	  $("#inc-top-nav").load("/sample/includes/top-nav.html");
-	  $("#inc-footer").load("/sample/includes/footer.html");
-	  
-    });
-	
+   <script>	
    $("#menu-toggle").click(function(e) {
    e.preventDefault();
    $("#wrapper").toggleClass("toggled");
