@@ -184,6 +184,21 @@
   padding: 10px;  
 }
 
+.video {
+	width: 203px;
+	min-height: 150px;
+	padding: 0 20px 0 0;
+	float: left;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.video-para {
+	text-align: left;
+	padding: 5px 0 0 0;
+	font-size: 13px;
+}
+
 .w-multimedia{
   width: 25%;	
 }
