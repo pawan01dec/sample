@@ -203,7 +203,7 @@
   width: 25%;	
 }
 
-body {
+.body {
   min-height: 100vh;
   position: relative;
   margin: 0;
