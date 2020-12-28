@@ -8,7 +8,12 @@
    <link rel="stylesheet" href="/sample/css/style.css">
    <script src="/sample/js/jquery.min.js"></script>
    <script src="/sample/js/bootstrap.min.js"></script>
-  
+   <script>
+    $(function(){
+	  $("#inc-footer").load("/sample/includes/footer.html");	  
+    });
+  </script>
+	  
    <style>
 	ol#checkList {
 		list-style-type:decimal;
@@ -138,11 +143,7 @@
 		 <hr>		 
       </div>
       <!-- /#page-content-wrapper -->
-	  <div class="footer">                     
-        <p> &copy; Copyright 2014 FERMAT | All Rights Reserved</p>
-		<p><strong>"FERMAT is published under the auspices of the University of Central Florida"</strong></p>
-		<p>ISSN 2470-4202</p>       
-      </div>
+	  <div id="inc-footer"></div>
    </div>
    <!-- /#wrapper -->
    <!-- jQuery -->
