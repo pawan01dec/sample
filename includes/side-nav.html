@@ -1,40 +1,40 @@
       <!-- Sidebar -->
       <div id="sidebar-wrapper">
          <ul class="sidebar-nav nav-pills nav-stacked" id="menu">
-            <li>
+            <li id="home">
                <a href="/sample/"><span class="fa-stack fa-lg pull-left"><i class="fa fa-dashboard fa-stack-1x "></i></span> HOME</a>
             </li>
-            <li>
+            <li id="about">
                <a href="/sample/about/"><span class="fa-stack fa-lg pull-left"><i class="fa fa-user fa-stack-1x "></i></span>ABOUT</a>
             </li>
-            <li>
+            <li id="search">
                <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-search fa-stack-1x "></i></span>SEARCH</a>
             </li>
-            <li>
+            <li id="editors">
                <a href="/sample/editors/"> <span class="fa-stack fa-lg pull-left"><i class="fa fa-edit fa-stack-1x "></i></span>EDITOR'S CORNER</a>
             </li>
-            <li>
+            <li id="articles">
                <a href="/sample/articles/"><span class="fa-stack fa-lg pull-left"><i class="fa fa-book fa-stack-1x "></i></span>ARTICLES</a>
             </li>
-            <li>
+            <li id="communications">
                <a href="/sample/communications/"><span class="fa-stack fa-lg pull-left"><i class="fa fa-signal fa-stack-1x "></i></span>COMMUNICATIONS</a>
             </li>
-            <li>
+            <li id="forum">
                <a href="/sample/forum/"><span class="fa-stack fa-lg pull-left"><i class="fa fa-forumbee fa-stack-1x "></i></span>FORUM</a>
             </li>
-	    <li>
+	    <li id="education">
                <a href="/sample/education/"><span class="fa-stack fa-lg pull-left"><i class="fa fa-institution fa-stack-1x "></i></span>EDUCATION</a>
             </li>
-	    <li>
+	    <li id="multimedia">
                <a href="/sample/multimedia/"><span class="fa-stack fa-lg pull-left"><i class="fa fa-file-video-o fa-stack-1x "></i></span>MULTIMEDIA</a>
             </li>
-	    <li>
+	    <li id="news">
                <a href="/sample/news/"><span class="fa-stack fa-lg pull-left"><i class="fa fa-newspaper-o fa-stack-1x "></i></span>NEWS & VIEWS</a>
             </li>
-	    <li>
+	    <li id="guidelines">
                <a href="/sample/guidelines/"><span class="fa-stack fa-lg pull-left"><i class="fa fa-info-circle fa-stack-1x "></i></span>SUBMISSION GUIDELINES</a>
             </li>
-	    <li>
+	    <li id="comments">
                <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-comment fa-stack-1x "></i></span>COMMENTS</a>
             </li>	
 			
@@ -45,8 +45,45 @@
 
       <script>
       	var loc = window.location.href;
-  	var str = loc.split("/")[3]; 
-  	var str2 = loc.split("/")[4];
-	alert(str);
-	alert(str2);      
+  	var str = loc.split("/")[3];  //sample
+  	var str2 = loc.split("/")[4];  //about
+	if(str.localeCompare("") == 0 || str2.localeCompare("") == 0)
+          $("#home").addClass("active");
+  	else{
+    	  switch(str2){
+	    case "about":
+	      $("#about").addClass("active");
+	      break;
+	  case "search":
+	      $("#search").addClass("active");
+	      break;
+	  case "editors":
+	      $("#editors").addClass("active");
+	      break;
+	  case "articles":
+	      $("#articles").addClass("active");
+	      break;
+	  case "communications":
+	      $("#communications").addClass("active");
+	      break;
+	  case "forum":
+	      $("#forum").addClass("active");
+	      break;		  
+	  case "education":
+	      $("#education").addClass("active");
+	      break;
+	  case "multimedia":
+	      $("#multimedia").addClass("active");
+	      break;		
+	  case "news":
+	      $("#news").addClass("active");
+	      break;
+	  case "guidelines":
+	      $("#guidelines").addClass("active");
+	      break;
+	  case "comments":
+	      $("#comments").addClass("active");
+	      break;		  
+	  }		
+	}
       </script>	      
